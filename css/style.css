@@ -7,6 +7,7 @@
   align-items: center;
 
   background-color: #fdf2e9;
+  position: relative;
 
   /* because we want header sticky later */
   height: 9.6rem;
@@ -52,8 +53,27 @@
 .main-nav-list {
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
   list-style: none;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  cursor: pointer;
+  background: none;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /**************************************/
@@ -62,7 +82,7 @@
 
 .section-hero {
   background-color: #fdf2e9;
-  padding: 9.6rem;
+  /* padding: 9.6rem; */
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -466,6 +486,7 @@ below also possible
   color: #555;
   font-size: 1.8rem;
   line-height: 1.8rem;
+  line-height: 1.6;
 }
 
 /**************************************/
@@ -479,6 +500,7 @@ below also possible
 
 .cta {
   display: grid;
+  /* 2/3=66%  1/3=33% */
   grid-template-columns: 2fr 1fr;
   /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
