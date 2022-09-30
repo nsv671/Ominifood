@@ -71,6 +71,9 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* Ddoes NOT work in Safari and Edge as of 2021 */
+  /* scroll-behavior: smooth; */
 }
 
 body {
